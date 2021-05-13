@@ -6,3 +6,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.map {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
