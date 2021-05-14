@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Map from '../components/Map'
 
-export default function Home() {
+export default function Home({events}) {
+  console.log(events)
   return (
     <div>
       <Head>
@@ -13,9 +13,22 @@ export default function Home() {
       </Head>
     
     <div>
-      <Map />
+      <Map eventData={events}/>
     </div>
       
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const res = await fetch("https://eonet.sci.gsfc.nasa.gov/api/v2.1/events");
+  const { events } = await res.json()
+
+  return {
+    props: {
+      events
+    },
+
+    revalidate: 60,
+  }
 }
