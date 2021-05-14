@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Map from '../components/Map'
+import Header from '../components/Header'
 
 export default function Home({events}) {
-  console.log(events)
   return (
     <div>
       <Head>
@@ -13,6 +13,7 @@ export default function Home({events}) {
       </Head>
     
     <div>
+      <Header />
       <Map eventData={events}/>
     </div>
       
