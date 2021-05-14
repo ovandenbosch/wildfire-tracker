@@ -50,6 +50,17 @@ body {
 
 }
 
+@media only screen and (max-width: 600px) {
+  .location-info {
+    position: absolute;
+    top: 90px;
+    width: 80vw;
+    right: auto;
+    margin: 10px;
+    align-items: center;
+  }
+}
+
 .location-info ul {
   list-style-type: none;
   padding: 0;
