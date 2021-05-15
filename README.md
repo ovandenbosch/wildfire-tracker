@@ -1,8 +1,26 @@
-# Wildfire Tracker
+<h1 align="center">Wildfire Tracker</h1>
+<p align="center">
+<img src="https://img.shields.io/github/issues/ovandenbosch/wildfire-tracker?style=for-the-badge">
+<img src="https://img.shields.io/node/v/nextjs?style=for-the-badge">
+<img src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fwildfire.ovdb.tech">
+<img src="https://img.shields.io/badge/Made%20by-Oliver-brightgreen?style=for-the-badge">
+
+
+
+
+
+
+
+
+
+</p>
+<h2 align="center"><a href="https://wildfire.ovdb.tech">Live Demo</a></h2>
+
+---
 A web application that allows you to see all current wildfires happening around the world on a global map.
 
-To production site, please click [here](https://wildfire.ovdb.tech). <br>
-.
+</br>
+
 
 # Table of contents
   - [Features](#features-fire)
