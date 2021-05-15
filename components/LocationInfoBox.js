@@ -1,7 +1,7 @@
 export default function LocationInfoBox({ info }) {
   return (
     <div className="location-info">
-      <h2>Event Location Info</h2>
+      <h2>Forest Fire Location Info</h2>
       <ul>
         <li>
           ID: <strong>{info.id}</strong>

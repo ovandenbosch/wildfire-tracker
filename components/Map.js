@@ -9,7 +9,7 @@ export default function Map({ center, zoom, eventData }) {
   return (
     <div className="map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyCf-rCehYaK2-sOsR6OsK7wF3vPhsZBAPg" }}
+        bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_MAP_API_KEY }}
         defaultCenter={center}
         defaultZoom={zoom}
       >
@@ -19,7 +19,7 @@ export default function Map({ center, zoom, eventData }) {
               <LocationMarker
                 lat={ev.geometries[0].coordinates[1]}
                 lng={ev.geometries[0].coordinates[0]}
-                onClick={() => setLocationInfo({ id: ev.id, title: ev.title})}
+                onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
               />
             );
           }
@@ -38,5 +38,5 @@ Map.defaultProps = {
     lng: -122.8756,
   },
 
-  zoom: 6,
+  zoom: 4,
 };
