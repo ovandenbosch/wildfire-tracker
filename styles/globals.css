@@ -1,15 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    overflow: hidden;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
+
+a {
+  color: #FFBA08;
 }
 
 .header {
   padding: 10px;
-  background-color: firebrick;
+  background-color: #3F88C5;
   color: #fff;
   position: fixed;
   top: 0;
@@ -33,7 +38,7 @@ body {
 
 .location-icon {
   font-size: 2rem;
-  color: red;
+  color: #D00000;
 }
 
 .location-info {
@@ -47,7 +52,6 @@ body {
   border-radius: 10px;
   font-size: 18px;
   color: #fff;
-
 }
 
 @media only screen and (max-width: 600px) {
