@@ -2,7 +2,6 @@
 A web application that allows you to see all current wildfires happening around the world on a global map.
 
 To production site, please click [here](https://wildfire.ovdb.tech). <br>
-.
 
 # Table of contents
   - [Features](#features-fire)
