@@ -4,7 +4,7 @@ import LocationMarker from "./LocationMarker";
 import LocationInfoBox from "./LocationInfoBox";
 
 export default function Map({ center, zoom, eventData }) {
-  const [locationInfo, setLocationInfo] = useState(null)
+  const [locationInfo, setLocationInfo] = useState(null);
 
   return (
     <div className="map">
@@ -19,7 +19,15 @@ export default function Map({ center, zoom, eventData }) {
               <LocationMarker
                 lat={ev.geometries[0].coordinates[1]}
                 lng={ev.geometries[0].coordinates[0]}
-                onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
+                onClick={() =>
+                  setLocationInfo({
+                    id: ev.id,
+                    title: ev.title,
+                    date: ev.geometries[0].date,
+                    source: ev.sources[0].id,
+                    url: ev.sources[0].url,
+                  })
+                }
               />
             );
           }
